@@ -1,6 +1,6 @@
 import * as React from 'react';
-import { SafeAreaView, ScrollView, View} from 'react-native';
-import { Searchbar, Card, FAB, Portal, Dialog, Paragraph, Button, Modal, Text } from 'react-native-paper';
+import { SafeAreaView, ScrollView} from 'react-native';
+import { Searchbar, Card, FAB } from 'react-native-paper';
 import {AddressAlert}  from '../ModalAndAlerts/AddressAlert'
 import {AddressModal} from '../ModalAndAlerts/AddressModal'
 
@@ -125,7 +125,7 @@ function RestaurantSelectScreen({navigation}) {
           addressModalVisible={addressModalVisible}  
           setAddressModalVisible={setAddressModalVisible}
           setAddressEntered={setAddressEntered}
-          addressObject={addressObject}
+          setAddress={setAddress}
         />
       </SafeAreaView>
     );
