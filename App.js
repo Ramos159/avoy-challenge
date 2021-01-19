@@ -1,21 +1,34 @@
-import { StatusBar } from 'expo-status-bar';
-import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import * as React from 'react';
+import 'react-native-gesture-handler';
+import { NavigationContainer } from '@react-navigation/native';
+import { createStackNavigator } from '@react-navigation/stack';
+import { RestaurantSelectScreen } from './Screens/RestaurantSelectScreen';
+import { RestaurantDetailScreen } from './Screens/RestaurantDetailScreen'
+import { Provider as PaperProvider } from 'react-native-paper';
+
+const Stack = createStackNavigator();
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
+    <PaperProvider>
+      <NavigationContainer>
+        <Stack.Navigator initialRouteName="RestaurantSelect">
+          <Stack.Screen
+          name="Restaurants" 
+          component={RestaurantSelectScreen}
+          options={{
+            headerShown: false
+          }}
+          />
+          <Stack.Screen
+            name="RestaurantDetail" 
+            component={RestaurantDetailScreen}
+            options={{
+            headerShown: false
+          }}
+          />
+        </Stack.Navigator>
+      </NavigationContainer>
+    </PaperProvider>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
