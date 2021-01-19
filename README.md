@@ -1,4 +1,4 @@
-# Avoy Internship Code Application
+# Avoy Internship Code Project
 
 If you're reading you're probably trying to install this, so without further ado:
 
