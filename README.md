@@ -11,3 +11,5 @@ If you're reading you're probably trying to install this, so without further ado
 from there you can either run on iOS simulator (if you're on mac and have XCode installed), on Android simulator(if you have android studio installed), on the web(I dont recommend this, its bad), or if you have expo installed on your mobile device you can scan the QR and open the app there.
 
 Enjoy!
+
+[Expo snack link](https://snack.expo.io/@ramos159/playful-popsicle)
