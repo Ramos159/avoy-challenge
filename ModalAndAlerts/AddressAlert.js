@@ -8,7 +8,7 @@ function AddressAlert({addressAlertVisible, setAddressAlertVisible}){
         <Dialog visible={addressAlertVisible} onDismiss={()=>{setAddressAlertVisible(false)}}>
             <Dialog.Title>Alert</Dialog.Title>
             <Dialog.Content>
-              <Paragraph>Please an address before moving on.</Paragraph>
+              <Paragraph>Please add an address before moving on.</Paragraph>
             </Dialog.Content>
             <Dialog.Actions>
               <Button color="#007ee6" title="Back"onPress={()=>{setAddressAlertVisible(false)}}/>

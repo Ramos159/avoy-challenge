@@ -32,7 +32,7 @@ function RestaurantDetailScreen({route, navigation}){
 		}
 
 		function SubmitOrder(){
-			alert("Congrats on your order! Now get out of here 😡");
+			alert("Congrats on submitting your order! Now get out of here 😡");
 		}
 
     return(

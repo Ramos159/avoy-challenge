@@ -24,7 +24,7 @@ function AddressModal({addressModalVisible,setAddressModalVisible, setAddress,se
 		object.zipcode = zipcode;
 		object.city = city;
 		object.country = country;
-    object.specialInstructionsm = specialInstructions;
+    object.specialInstructions = specialInstructions;
 
 		setAddress(object);
 		setAddressEntered(true);
