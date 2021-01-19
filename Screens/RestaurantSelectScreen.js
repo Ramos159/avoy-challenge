@@ -97,6 +97,7 @@ function RestaurantSelectScreen({navigation}) {
     return (
       <SafeAreaView style={{ flex: 1, justifyContent: 'top', paddingTop:15 ,backgroundColor:'white'}}>
         <Searchbar
+          icon={{uri:"https://cdn3.iconfinder.com/data/icons/instagram-18/512/194_Instagram_Search_Sets-512.png"}}
           style={{margin:10}}
           placeholder="Search For Restaurants..."
           value={searchTerm}
@@ -113,7 +114,7 @@ function RestaurantSelectScreen({navigation}) {
           position:"absolute",
           }}
           visible={!addressEntered}
-          icon="plus"
+          icon={{uri:"https://cdn4.iconfinder.com/data/icons/vectory-bonus-3/40/button_add-512.png"}}
           label="Add Address"
           onPress={()=>{setAddressModalVisible(true)}}
         />

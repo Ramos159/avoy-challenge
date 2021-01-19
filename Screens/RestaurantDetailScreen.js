@@ -49,7 +49,7 @@ function RestaurantDetailScreen({route, navigation}){
             bottom: 30,
             backgroundColor:"#007ee6"
         }}
-        icon="arrow-left"
+        icon={{uri:"https://cdn.iconscout.com/icon/free/png-512/back-arrow-1767531-1502435.png"}}
         onPress={()=>{navigation.goBack()}}
         />
 				<Portal>
